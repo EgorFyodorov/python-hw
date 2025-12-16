@@ -1,18 +1,25 @@
 import sys
+from typing import Optional, Tuple
 
-def get_stats(content):
+def get_stats(content: bytes) -> Tuple[int, int, int]:
     lines = content.count(b'\n')
     words = len(content.split())
     byte_count = len(content)
     return lines, words, byte_count
 
-def print_stats(lines, words, byte_count, name=None, width=7):
+def print_stats(
+    lines: int,
+    words: int,
+    byte_count: int,
+    name: Optional[str] = None,
+    width: int = 7,
+) -> None:
     if name is None:
         print(f"{lines:>{width}} {words:>{width}} {byte_count:>{width}}")
     else:
         print(f"{lines:>{width}} {words:>{width}} {byte_count:>{width}} {name}")
 
-def main():
+def main() -> None:
     args = sys.argv[1:]
     
     if not args:

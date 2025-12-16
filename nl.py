@@ -1,10 +1,11 @@
 import sys
+from typing import TextIO
 
-def nl(input_stream):
+def nl(input_stream: TextIO) -> None:
     for i, line in enumerate(input_stream, 1):
         print(f"{i:>6}\t{line}", end='')
 
-def main():
+def main() -> None:
     if len(sys.argv) > 1:
         filename = sys.argv[1]
         try:

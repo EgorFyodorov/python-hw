@@ -1,15 +1,15 @@
 import sys
 from collections import deque
+from typing import Deque, Iterable, TextIO
 
-def tail_stream(stream, lines_count):
-
+def tail_stream(stream: Iterable[str], lines_count: int) -> Deque[str]:
     return deque(stream, maxlen=lines_count)
 
-def print_lines(lines):
+def print_lines(lines: Iterable[str]) -> None:
     for line in lines:
         print(line, end='')
 
-def main():
+def main() -> None:
     args = sys.argv[1:]
     
     if not args:
@@ -20,7 +20,6 @@ def main():
             sys.exit(0)
         return
 
-    # Files provided
     is_multiple_files = len(args) > 1
     first_file = True
 
@@ -29,7 +28,7 @@ def main():
             with open(filename, 'r', encoding='utf-8') as f:
                 if is_multiple_files:
                     if not first_file:
-                        print() # Empty line before next file header
+                        print()
                     print(f"==> {filename} <==")
                 
                 lines = tail_stream(f, 10)

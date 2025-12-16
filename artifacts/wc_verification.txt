@@ -1,7 +1,7 @@
-$ python3 hw_1/wc.py hw_1/artifacts/files/wc_test1.txt hw_1/artifacts/files/wc_test2.txt
-      4      10      48 hw_1/artifacts/files/wc_test1.txt
-      4      10      58 hw_1/artifacts/files/wc_test2.txt
+$ python3 wc.py artifacts/files/wc_test1.txt artifacts/files/wc_test2.txt
+      4      10      48 artifacts/files/wc_test1.txt
+      4      10      58 artifacts/files/wc_test2.txt
       8      20     106 total
 
-$ cat hw_1/artifacts/files/wc_test1.txt | python3 hw_1/wc.py
+$ cat artifacts/files/wc_test1.txt | python3 wc.py
       4      10      48

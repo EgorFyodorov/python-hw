@@ -1,4 +1,4 @@
-$ python3 hw_1/nl.py hw_1/artifacts/files/nl_test.txt
+$ python3 nl.py artifacts/files/nl_test.txt
      1	First line
      2	Second line
      3	
@@ -6,7 +6,7 @@ $ python3 hw_1/nl.py hw_1/artifacts/files/nl_test.txt
      5	Fifth line
      6	
 
-$ cat hw_1/artifacts/files/nl_test.txt | python3 hw_1/nl.py
+$ cat artifacts/files/nl_test.txt | python3 nl.py
      1	First line
      2	Second line
      3	
