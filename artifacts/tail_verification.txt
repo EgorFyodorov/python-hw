@@ -1,0 +1,36 @@
+$ python3 hw_1/tail.py hw_1/artifacts/files/tail_test1.txt hw_1/artifacts/files/tail_test2.txt
+==> hw_1/artifacts/files/tail_test1.txt <==
+Line 7
+Line 8
+Line 9
+Line 10
+Line 11
+Line 12
+Line 13
+Line 14
+Line 15
+
+
+==> hw_1/artifacts/files/tail_test2.txt <==
+Content of file 2 - Line 1
+Content of file 2 - Line 2
+Content of file 2 - Line 3
+
+
+$ cat hw_1/artifacts/files/tail_test1.txt | python3 hw_1/tail.py
+Line 1
+Line 2
+Line 3
+Line 4
+Line 5
+Line 6
+Line 7
+Line 8
+Line 9
+Line 10
+Line 11
+Line 12
+Line 13
+Line 14
+Line 15
+
