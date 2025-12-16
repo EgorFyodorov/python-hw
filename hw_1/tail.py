@@ -1,5 +1,4 @@
 import sys
-from collections import deque
 from typing import Deque, Iterable, TextIO
 
 def tail_stream(stream: Iterable[str], lines_count: int) -> Deque[str]:
