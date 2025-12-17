@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{array}
+\title{LaTeX Generator}
+\author{hw\_2}
+\date{}
+\begin{document}
+\maketitle
+
+\section*{Table example}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+Name & Role & Score \\
+\hline
+Alice & Developer & 9.1 \\
+\hline
+Bob & Reviewer & 8.7 \\
+\hline
+Charlie & Analyst & 9.4 \\
+\hline
+\end{tabular}
+\caption{Generated table}
+\label{tab:sample}
+\end{table}
+
+\section*{Image example}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.45\textwidth]{sample.png}
+\caption{Sample image}
+\label{fig:sample-image}
+\end{figure}
+
+\end{document}

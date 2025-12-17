@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  latex:
+    build: .
+    image: hw2-latex
+    volumes:
+      - ./artifacts:/app/artifacts
