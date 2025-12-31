@@ -1,0 +1,5 @@
+[project]
+name = "hw_4"
+authors = [{name = "Egor Fyodorov", email = "egorfyodorovv@gmail.com"}]
+dependencies = []
+requires-python = ">=3.8"

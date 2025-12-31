@@ -1,0 +1,11 @@
+$ python3 process_interaction.py 
+2025-12-31 17:14:25 - Main sent: Hello World
+2025-12-31 17:14:25 - Main sent: Python
+2025-12-31 17:14:25 - Main sent: Multiprocessing
+2025-12-31 17:14:30 - B output: uryyb jbeyq
+2025-12-31 17:14:30 - Main received: uryyb jbeyq
+2025-12-31 17:14:35 - B output: clguba
+2025-12-31 17:14:35 - Main received: clguba
+2025-12-31 17:14:40 - B output: zhygvcebprffvat
+2025-12-31 17:14:40 - A received STOP
+2025-12-31 17:14:40 - Main received: zhygvcebprffvat

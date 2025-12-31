@@ -1,0 +1,4 @@
+Running Fibonacci(32) x 10 times...
+Synchronous: 4.0352s
+Threading: 4.2222s
+Multiprocessing: 1.5657s
